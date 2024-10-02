@@ -1389,7 +1389,9 @@
         }
     });
 
-    document.querySelectorAll('img').forEach(i => i.hidden = !i.src || !i.naturalWidth);
+    window.onload = function () {
+        document.querySelectorAll('img').forEach(i => i.hidden = !i.src || !i.naturalWidth);
+    };
 </script>
 
 </html>
