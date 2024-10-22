@@ -86,11 +86,11 @@
 			'<bq>miao</bq>' +
 			'<div class="navigation-tags">' +
 			'<ul id="menu-%e4%b8%bb-1" class="mobile menu">' +
-			'<li><a href="https://misakamiko.to/"><img src="./image/index/4.png" style="font-weight: 321;width: 23px;">homepage</a></li>' +
-			'<li><a href="https://yinghua.love/"><img src="./image/index/20.png" style="font-weight: 321;width: 23px;">sakura</a></li>' +
-			'<li><a href="https://dongman.love/"><img src="./image/index/19.png" style="font-weight: 321;width: 23px;">anime</a></li>' +
-			'<li><a href="https://dailianyou.com/"><img src="./image/index/28.gif" style="font-weight: 321;width: 23px;">代练游</a></li>' +
-			'<li><a href="../chat/index.html"><img src="./image/index/29.gif" style="font-weight: 321;width: 23px;">chat</a></li>' +
+			'<li><a href=""><img src="./image/index/4.png" style="font-weight: 321;width: 23px;"></a></li>' +
+			'<li><a href=""><img src="./image/index/20.png" style="font-weight: 321;width: 23px;"></a></li>' +
+			'<li><a href=""><img src="./image/index/19.png" style="font-weight: 321;width: 23px;"></a></li>' +
+			'<li><a href=""><img src="./image/index/28.gif" style="font-weight: 321;width: 23px;"></a></li>' +
+			'<li><a href=""><img src="./image/index/29.gif" style="font-weight: 321;width: 23px;"></a></li>' +
 			'<li><a href="#"><img src="./image/index/31.gif" style="font-weight: 321;width: 23px;">white album</a></li>' +
 			'<li><a href="#"><img src="./curso/miku3.gif" style="font-weight: 321;width: 23px;">文字广告位</a></li>' +
 			'<li><a href="#"><img src="./curso/miku4.gif" style="font-weight: 321;width: 23px;">文字广告位2</a></li>' +
