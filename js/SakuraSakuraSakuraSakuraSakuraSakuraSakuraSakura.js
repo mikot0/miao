@@ -60,7 +60,7 @@
 
 			'<div class="desktop">' +
 			'' +
-			'<span class="element" style="font-weight: 321;color: #464646;"></span>' +
+			'<span class="element" style="font-weight: 123;color: #464646;"></span>' +
 			'<span class="element"></span>' +
 			'<img src="./image/index/signaturelogo.png" style="width: 13px;">' +
 			'</div>'
