@@ -2949,7 +2949,7 @@ body.is-touch .spotlight {
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(51, 51, 51, 0);
-    border-radius: 15px !important;
+    border-radius: 15px;
     transition: all 0.7s;
     z-index: 999;
 }

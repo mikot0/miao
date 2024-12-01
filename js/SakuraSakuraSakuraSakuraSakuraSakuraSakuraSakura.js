@@ -368,47 +368,27 @@
 
 })(jQuery);
 
+//导航栏
 document.addEventListener("DOMContentLoaded", function () {
+    var header = document.querySelector('#header');
 
-	// 导航栏js
-	var header = document.querySelector('#header');
-	window.addEventListener('scroll', function () {
-		var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    window.addEventListener('scroll', function () {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-		if (scrollTop > 0) {
-			// 滚动条不在顶部时的样式
-			header.style.width = '100%';
-			header.style.borderRadius = '0px !important';
-			header.style.top = '0px';
-			header.style.backgroundColor = 'rgba(66, 66, 66, 0)';
-			header.style.transition = 'all 1s'; // 添加过渡效果
+        header.style.transition = 'all 1s';
+        header.style.borderRadius = scrollTop > 0 ? '0px' : '15px';
+        header.style.width = scrollTop > 0 ? '100%' : '95%';
+        header.style.top = scrollTop > 0 ? '0px' : '30px';
+        header.style.backgroundColor = scrollTop > 0 ? 'rgba(66, 66, 66, 0)' : 'rgba(66, 66, 66, 0)';
+    });
 
-			// 鼠标悬停时的样式
-			header.addEventListener('mouseover', function () {
-				header.style.backgroundColor = 'rgba(255, 255, 255, 1)';
-			});
+    header.addEventListener('mouseover', function () {
+        header.style.backgroundColor = 'rgba(255, 255, 255, 1)';
+    });
 
-			header.addEventListener('mouseout', function () {
-				header.style.backgroundColor = 'rgba(66, 66, 66, 0)';
-			});
-		} else {
-			// 滚动条在顶部时的样式
-			header.style.width = '95%';
-			header.style.borderRadius = '15px';
-			header.style.top = '30px';
-			header.style.backgroundColor = 'rgba(66, 66, 66, 0)';
-			header.style.transition = 'all 1s'; // 添加过渡效果
-
-			// 鼠标悬停时的样式
-			header.addEventListener('mouseover', function () {
-				header.style.backgroundColor = 'rgba(255, 255, 255, 1)';
-			});
-
-			header.addEventListener('mouseout', function () {
-				header.style.backgroundColor = 'rgba(66, 66, 66, 0)';
-			});
-		}
-	});
+    header.addEventListener('mouseout', function () {
+        header.style.backgroundColor = 'rgba(66, 66, 66, 0)';
+    });
 });
 
 //手机端菜单
