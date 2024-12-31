@@ -89,11 +89,11 @@
 			'<li><a href=""><img src="./image/index/4.png" style="font-weight: 321;width: 23px;"></a></li>' +
 			'<li><a href=""><img src="./image/index/20.png" style="font-weight: 321;width: 23px;"></a></li>' +
 			'<li><a href=""><img src="./image/index/19.png" style="font-weight: 321;width: 23px;"></a></li>' +
-			'<li><a href=""><img src="./image/index/28.gif" style="font-weight: 321;width: 23px;"></a></li>' +
-			'<li><a href=""><img src="./image/index/29.gif" style="font-weight: 321;width: 23px;"></a></li>' +
-			'<li><a href="#"><img src="./image/index/31.gif" style="font-weight: 321;width: 23px;">white album</a></li>' +
-			'<li><a href="#"><img src="./curso/miku3.gif" style="font-weight: 321;width: 23px;">文字广告位</a></li>' +
-			'<li><a href="#"><img src="./curso/miku4.gif" style="font-weight: 321;width: 23px;">文字广告位2</a></li>' +
+			'<li><a href=""><img src="./image/index/28.png" style="font-weight: 321;width: 23px;"></a></li>' +
+			'<li><a href=""><img src="./image/index/29.png" style="font-weight: 321;width: 23px;"></a></li>' +
+			'<li><a href="#"><img src="./image/index/28.gif" style="font-weight: 321;width: 23px;">文字广告位</a></li>' +
+			'<li><a href="#"><img src="./image/index/29.gif" style="font-weight: 321;width: 23px;">文字广告位2</a></li>' +
+			'<li><a href="#"><img src="./image/index/30.gif" style="font-weight: 321;width: 23px;">文字广告位3</a></li>' +
 			'</ul>' +
 			'</div>' +
 			'</div>'

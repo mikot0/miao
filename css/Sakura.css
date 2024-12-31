@@ -98,9 +98,10 @@ span.no {
     font-weight: 800;
     height: 56px;
     line-height: 56px;
-    padding-left: 6px;
+    padding-left: 16px;
     padding-right: 15px;
-    padding-top: 11px;
+    padding-top: 0px;
+    margin-top: -0px;
     border-bottom: none
         /* text-decoration-line: none */
 }
@@ -133,7 +134,8 @@ span.no {
     transform: translateY(-15px);
     opacity: 0;
     transition-property: opacity;
-    transition-duration: .5s, .5s
+    transition-duration: .5s, .5s;
+    margin-top: -13px;
 }
 
 .logolink a:hover ruby rt {
