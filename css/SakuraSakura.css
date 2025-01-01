@@ -2938,6 +2938,10 @@ body.is-touch .spotlight {
     padding-top: 3.5em;
 }
 
+#header:hover {    
+    box-shadow: 5px 5px 7px #a4cdf666, -5px -5px 7px #ffffff66;
+}
+
 #header {
     /* background: rgba(66, 66, 66, 0.66); */
     box-shadow: 0 0 10px rgba(66, 66, 66, 0.66);
