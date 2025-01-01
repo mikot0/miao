@@ -501,6 +501,7 @@ span.no {
 }
 
 .header-info2 {
+    border: 1px solid #fff;
     width: auto;
     margin: auto;
     font-size: 16px;
@@ -561,6 +562,7 @@ span.no {
 }
 
 .top-social img {
+    border: 1px solid #fff;
     height: 40px;
     width: 40px;
     padding: 9px;
@@ -577,6 +579,11 @@ span.no {
 
 .top-social img {
     border-radius: 15px;
+}
+
+.top-social img:hover {
+    box-shadow: 0 1px 6px 3px #e8e8e8;
+    background: rgba(255, 255, 255, 0.95);
 }
 
 .banner_wave_1,.banner_wave1 {

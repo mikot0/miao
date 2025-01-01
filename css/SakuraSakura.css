@@ -3612,6 +3612,7 @@ body.is-touch #banner {
     animation: bounce 2s 1;
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 1px 6px 3px #e8e8e8;
 }
 
 .menu-list a:hover::before,
@@ -3798,8 +3799,7 @@ body.is-touch #banner {
     color: #4d4d4d;
 }
 
-.footer-catalog-wrap ul {
-}
+.footer-catalog-wrap ul {}
 
 /* 左侧下方的信息 */
 .footer-left-bottom-info {
@@ -3864,4 +3864,45 @@ body.is-touch #banner {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.button-img {
+    width: 5%;
+    padding: .3rem;
+    border-radius: 1rem;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.2) 80%);
+    background-size: 200% 100%;
+    border: 1px solid transparent;
+    animation: background-animation 1.2s cubic-bezier(0.55, 0, 0.35, 1) infinite alternate;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    font-size: 16px;
+    font-weight: bold;
+    border-color: #fff;
+    color: #a4cdf6;
+}
+
+@media (max-width: 768px) {
+    .button-img {
+        width: 11%;
+    }
+}
+
+.button-img:hover {
+    opacity: 0.6;
+    box-shadow: 0 1px 6px 3px #e8e8e8;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+@keyframes background-animation {
+    0% {
+        background-position: 0 0
+    }
+
+    100% {
+        background-position: 100% 0
+    }
 }
