@@ -81,7 +81,7 @@
 
 			'<div id="mo-nav">' +
 			'<div class="mobile m-avatar">' +
-			'<img src="./image/index/avatar2.png">' +
+			'<img id="flower27" src="./image/index/avatar2.png">' +
 			'</div>' +
 			'<bq>miao</bq>' +
 			'<div class="navigation-tags">' +

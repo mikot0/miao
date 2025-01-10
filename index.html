@@ -235,7 +235,7 @@
                             data-text="电击制裁">电击制裁</h1>
                         <div id="flower5" class="focusinfo">
                             <div class="header-tou" style="text-align: center;">
-                                <a href="#"><img loading="lazy" src="./image/index/avatar.jpg"></a>
+                                <a href="#"><img id="flower26" loading="lazy" src="./image/index/avatar.jpg"></a>
                             </div>
                         </div>
                         <!-- //可以隐藏元素，但它们在隐藏方式上不一样。display: none;会完全从页面中移除元素，visibility: hidden;会保留元素的占位空间，不可见。-->
@@ -290,7 +290,9 @@
                         </div>
                     </header>
                 </div>
-                <div class="button-img">切换</div>
+                <div id="flower24">
+                    <div id="flower25" class="button-img">切换</div>
+                </div>
                 <div id="flower2a" class="Pixelgrid Pixelgridbackground filter-dot" style="height: auto;" hidden>
                 </div>
                 <a href="#qwq" class="desktop goto-next scrolly">0v0</a>
@@ -300,7 +302,8 @@
 
             <section id="qwq" class="spotlight style2 right">
                 <span class="image fit main">
-                    <img src="./image/index/2.jpeg"></span>
+                    <img id="flower28" src="./image/index/2.jpeg">
+                </span>
                 <div class="content">
                     <header>
                         <h2 style="font-weight: 666;">佐天泪子</h2>
@@ -342,7 +345,7 @@
             </section>
 
             <section id="awa" class="spotlight style3 left">
-                <span class="image fit main bottom"><img src="./image/index/3.jpg"></span>
+                <span class="image fit main bottom"><img id="flower29" src="./image/index/3.jpg"></span>
                 <div class="content">
                     <header>
                         <h2 style="font-weight: 666;">少女写真集</h2>
@@ -385,7 +388,7 @@
 
         <section id="tnt" class="spotlight style1 bottom">
             <span class="image fit main">
-                <img src="./image/index/4.jpg">
+                <img id="flower30" src="./image/index/4.jpg">
             </span>
             <div class="content">
                 <div class="container">
@@ -496,10 +499,6 @@
                                         <ul>
                                             <a href="https://github.com/mikot0/misakanet"
                                                 style="font-weight: 321;color: #4d4d4d;">github下载</a>｜
-                                            <a href="https://github.com/mikot0/Misaka-Mikoto-expression-pack"
-                                                style="font-weight: 321;color: #4d4d4d;">御坂美琴表情包</a>｜
-                                            <a href="https://github.com/mikot0/Misaka-Mikoto-transparent-material-picture"
-                                                style="font-weight: 321;color: #4d4d4d;">御坂美琴透明素材图</a>｜
                                         </ul>
                                     </div>
                                     <div class="footer-copyright">
@@ -1317,6 +1316,7 @@
             flower14.hidden = true;
             flower15.hidden = true;
             flower16.hidden = true;
+            flower24.hidden = true;
         } else {
             flower3.style.visibility = "hidden";
             flower.src = "./image/index/search.png";
@@ -1332,6 +1332,7 @@
             flower14.hidden = false;
             flower15.hidden = false;
             flower16.hidden = false;
+            flower24.hidden = false;
         }
 
         if (flower4.hidden) {
@@ -1423,6 +1424,41 @@
         } else {
             flower23.src = "./image/index/027.png";
         }
+    });
+
+    let isFirst = true;
+
+    flower25.addEventListener("click", function () {
+        var qwq = document.getElementById("qwq");
+        var awa = document.getElementById("awa");
+        var tnt = document.getElementById("tnt");
+        var monav = document.getElementById("mo-nav");
+        var body = document.body;
+
+        if (isFirst) {
+            banner.style.backgroundImage = 'url("https://www.loliapi.com/acg/")';
+            qwq.style.backgroundImage = 'url("https://www.dmoe.cc/random.php")';
+            flower28.src = "https://www.dmoe.cc/random.php";
+            awa.style.backgroundImage = 'url("https://www.loliapi.com/bg/")';
+            flower29.src = "https://www.loliapi.com/bg/";
+            tnt.style.backgroundImage = 'url("https://api.maho.cc/random-img/pc.php")';
+            flower30.src = "https://api.maho.cc/random-img/pc.php";
+            /*monav.style.backgroundImage = 'url("https://.你的域名./image/index/chara04..jpeg")';*/
+            body.style.backgroundImage = 'url("https://api.horosama.com/random.php")';
+            flower26.src = "https://www.loliapi.com/acg/pp/";
+            flower27.src = "https://www.loliapi.com/acg/pp/";
+        } else {
+            banner.style.backgroundImage = 'url("https://www.loliapi.com/acg/pc/")';
+            qwq.style.backgroundImage = 'url("https://www.loliapi.com/acg/pe/")';
+            flower28.src = "https://www.loliapi.com/acg/pe/";
+            awa.style.backgroundImage = 'url("https://api.maho.cc/asuhe-rand/index.php")';
+            flower29.src = "https://api.maho.cc/asuhe-rand/index.php";
+            tnt.style.backgroundImage = 'url("https://api.maho.cc/random-img/mobile.php")';
+            flower30.src = "https://api.maho.cc/random-img/mobile.php";
+            body.style.backgroundImage = 'url("https://img.paulzzh.com/touhou/random")';
+        }
+
+        isFirst = !isFirst;
     });
 </script>
 
