@@ -667,7 +667,7 @@ xhx {
 xhx::before {
     content: "";
     position: absolute;
-    top: 100%;
+    top: 66px;
     left: 0;
     width: 0;
     height: 2px;

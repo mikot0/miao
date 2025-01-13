@@ -3019,8 +3019,6 @@ body.miaomiaomiao #page-wrapper {
 
 body.miaomiaomiao #header {
     box-sizing: border-box;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
     /* 模糊，磨砂质感 */
     /* backdrop-filter: blur(8px); */
     z-index: 99;

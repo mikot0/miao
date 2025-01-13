@@ -86,11 +86,11 @@
 			'<bq>miao</bq>' +
 			'<div class="navigation-tags">' +
 			'<ul id="menu-%e4%b8%bb-1" class="mobile menu">' +
-			'<li><a href=""><img src="./image/index/4.png" style="font-weight: 321;width: 23px;"></a></li>' +
-			'<li><a href=""><img src="./image/index/20.png" style="font-weight: 321;width: 23px;"></a></li>' +
-			'<li><a href=""><img src="./image/index/19.png" style="font-weight: 321;width: 23px;"></a></li>' +
-			'<li><a href=""><img src="./image/index/28.png" style="font-weight: 321;width: 23px;"></a></li>' +
-			'<li><a href=""><img src="./image/index/29.png" style="font-weight: 321;width: 23px;"></a></li>' +
+			'<li><a href=""><img src="./image/index/4.png" style="font-weight: 321;width: 23px;">喵喵喵</a></li>' +
+			'<li><a href=""><img src="./image/index/20.png" style="font-weight: 321;width: 23px;">喵喵喵</a></li>' +
+			'<li><a href=""><img src="./image/index/19.png" style="font-weight: 321;width: 23px;">喵喵喵</a></li>' +
+			'<li><a href=""><img src="./image/index/28.png" style="font-weight: 321;width: 23px;">喵喵喵</a></li>' +
+			'<li><a href=""><img src="./image/index/29.png" style="font-weight: 321;width: 23px;">喵喵喵</a></li>' +
 			'<li><a href="#"><img src="./image/index/28.gif" style="font-weight: 321;width: 23px;">文字广告位</a></li>' +
 			'<li><a href="#"><img src="./image/index/29.gif" style="font-weight: 321;width: 23px;">文字广告位2</a></li>' +
 			'<li><a href="#"><img src="./image/index/30.gif" style="font-weight: 321;width: 23px;">文字广告位3</a></li>' +
@@ -370,25 +370,25 @@
 
 //导航栏
 document.addEventListener("DOMContentLoaded", function () {
-    var header = document.querySelector('#header');
+	var header = document.querySelector('#header');
 
-    window.addEventListener('scroll', function () {
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+	window.addEventListener('scroll', function () {
+		var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-        header.style.transition = 'all 1s';
-        header.style.borderRadius = scrollTop > 0 ? '0px' : '15px';
-        header.style.width = scrollTop > 0 ? '100%' : '95%';
-        header.style.top = scrollTop > 0 ? '0px' : '30px';
-        header.style.backgroundColor = scrollTop > 0 ? 'rgba(66, 66, 66, 0)' : 'rgba(66, 66, 66, 0)';
-    });
+		header.style.transition = 'all 1s';
+		header.style.borderRadius = scrollTop > 0 ? '0px' : '15px';
+		header.style.width = scrollTop > 0 ? '100%' : '95%';
+		header.style.top = scrollTop > 0 ? '0px' : '30px';
+		header.style.backgroundColor = scrollTop > 0 ? 'rgba(66, 66, 66, 0)' : 'rgba(66, 66, 66, 0)';
+	});
 
-    header.addEventListener('mouseover', function () {
-        header.style.backgroundColor = 'rgba(255, 255, 255, 1)';
-    });
+	header.addEventListener('mouseover', function () {
+		header.style.backgroundColor = 'rgba(255, 255, 255, 1)';
+	});
 
-    header.addEventListener('mouseout', function () {
-        header.style.backgroundColor = 'rgba(66, 66, 66, 0)';
-    });
+	header.addEventListener('mouseout', function () {
+		header.style.backgroundColor = 'rgba(66, 66, 66, 0)';
+	});
 });
 
 //手机端菜单

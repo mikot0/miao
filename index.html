@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>misaka</title>
+    <title>miao</title>
     <meta name="description" content="Sakura">
     <meta name="keywords" content="Sakura">
     <link rel="icon" href="./image/index/Sakura.png">
@@ -73,7 +73,13 @@
             <div id="cursor-dot"></div>
             <div id="cursor-circle"></div>
             <div class="scrollbar" id="bar"></div>
-            <a href="#" class="cd-top"></a>
+            <a class="cd-top"></a>
+            <div class="top-container">
+                <div class="popup-container">
+                    <img src="./image/index/scroll1.png" class="popup-img">
+                </div>
+            </div>
+            <button class="close-btn" onclick="togglePopup()"></button>
             <img id="BackToTop" style="transform: scale(0); transition: transform 0.3s;" src="./image/index/keai2.png">
             <img id="open-skinMenu" src="./image/index/keai.png">
             <div class="skin-menu">
@@ -193,9 +199,9 @@
                 style="position: absolute;z-index: 999;pointer-events: none;top: 757px;width: 321px;right: -66px;"
                 class="mobile align-right slide-in">
             <header id="header">
-                <span id="logo2" class="logolink moe-mashiro"><a href="#"><ruby><span class="Sakuraso">M</span><span
-                                class="no">o</span><span class="">e</span>
-                            <rt class="">Misaka Mikoto</rt>
+                <span id="logo2" class="logolink moe-mashiro"><a href="#"><ruby><span class="Sakuraso">Mi</span><span
+                                class="no">a</span><span class="">o</span>
+                            <rt class="">呜喵~</rt>
                         </ruby></a></span>
                 <!-- <h1 id="logo"><a href="#">喵喵喵</a></h1> -->
                 <div class="img"></div>
@@ -204,7 +210,27 @@
                     <ul>
                         <xh>
                             <img src="./image/index/1.png" style="width: 38px; height: 66px;">
-                            <xhx><a style="font-weight: 321;color: #424242;" href=""></a></xhx>
+                            <xhx>
+                                <cd class="menu-container">
+                                    <a style="font-weight: 321;color: #424242;" class="menu-trigger">喵喵喵</a>
+                                    <div class="submenu">
+                                        <ull>
+                                            <lii>
+                                                <a class="submenu-item submenu-trigger" id="option-1">喵喵喵</a>
+                                                <div class="submenu-2" id="submenu-2">
+                                                    <ull>
+                                                        <lii><a href="#">喵喵喵</a></lii>
+                                                        <lii><a href="#">喵喵喵</a></lii>
+                                                    </ull>
+                                                </div>
+                                                <a href="#" class="submenu-item">喵喵喵</a>
+                                                <a href="#" class="submenu-item">喵喵喵</a>
+                                                <a href="#" class="submenu-item">喵喵喵</a>
+                                            </lii>
+                                        </ull>
+                                    </div>
+                                </cd>
+                            </xhx>
                             <img src="./image/index/5.png" style="width: 38px; height: 66px;">
                             <xhx><a style="font-weight: 321;color: #424242;" href=""></a></xhx>
                             <img src="./image/index/21.png" style="width: 38px; height: 66px;">
@@ -496,7 +522,7 @@
                                 <div class="footer-left-bottom-info">
                                     <div class="contact1">
                                         <h2 style="color: #424242;">卡哇伊~</h2>
-                                        <ul>Theme Moe by
+                                        <ul>theme miao by
                                             <a href="https://github.com/mikot0/moe"
                                                 style="font-weight: 321;color: #4d4d4d;"> mikot0</a>｜
                                         </ul>
@@ -527,7 +553,7 @@
                                                     “</td>
                                                 <td style="padding: 1em; vertical-align: middle;"><b><span
                                                             style="color:#E95098;"><ruby>
-                                                                <rb style="font-weight: 210;">呐,你想变成什么颜色？</rb>
+                                                                <rb style="font-weight: 210;">呐,你想变成什么颜色?</rb>
                                                                 <rt style="font-size:0.75em"><span
                                                                         style="font-weight: 210;">ねぇ，あなたは何色になりたい?</span>
                                                                 </rt>
@@ -757,6 +783,84 @@
     #toggleSidebar img {
         width: 30px;
         height: 30px;
+    }
+
+    .top-container {
+        position: fixed;
+        top: 0;
+        left: 39vh;
+        right: 0;
+        overflow: hidden;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: transform 1s, opacity 1s;
+        z-index: 1111;
+        pointer-events: none;
+    }
+
+    .popup-container {
+        width: 100px;
+    }
+
+    .popup-img {
+        width: 100%;
+        opacity: 0.8;
+    }
+
+    .close-btn {
+        position: fixed;
+        left: 39vh;
+        width: 123px;
+        height: 123px;
+        background: transparent;
+        border: 1px solid transparent;
+        font-size: 10px;
+        z-index: 1234;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: transform 1s, opacity 1s;
+    }
+
+    .submenu,
+    .submenu-2 {
+        display: none;
+        position: absolute;
+        background: #fff6;
+        border: 1px solid #fff;
+        width: 123px;
+        height: 177px;
+        z-index: 1234;
+        border-radius: 15px;
+    }
+
+    .submenu-2 {
+        top: -1px;
+        left: 100%;
+    }
+
+    .submenu ull {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .submenu ull lii a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #000;
+        border-radius: 15px;
+    }
+
+    .menu-container:hover .submenu,
+    .submenu ull lii:hover>.submenu-2 {
+        display: block;
+    }
+
+    .menu-trigger:hover,
+    .submenu-item:hover,
+    .submenu-2 a:hover {
+        background-color: #ffffff66;
     }
 </style>
 
@@ -1444,7 +1548,7 @@
             tnt.style.backgroundImage = 'url("https://api.maho.cc/random-img/pc.php")';
             flower30.src = "https://api.maho.cc/random-img/pc.php";
             /*monav.style.backgroundImage = 'url("https://.你的域名./image/index/chara04..jpeg")';*/
-            monav.style.backgroundImage = 'url("https://api.boxmoe.com/random.php")';
+            monav.style.backgroundImage = 'url("https://api.maho.cc/asuhe-rand/index.php")';
             body.style.backgroundImage = 'url("https://api.horosama.com/random.php")';
             flower26.src = "https://www.loliapi.com/acg/pp/";
             flower27.src = "https://api.boxmoe.com/random.php?size=mw690";
@@ -1452,11 +1556,11 @@
             banner.style.backgroundImage = 'url("https://www.loliapi.com/acg/pc/")';
             qwq.style.backgroundImage = 'url("https://www.loliapi.com/acg/pe/")';
             flower28.src = "https://www.loliapi.com/acg/pe/";
-            awa.style.backgroundImage = 'url("https://api.maho.cc/asuhe-rand/index.php")';
+            awa.style.backgroundImage = 'url("https://api.boxmoe.com/random.php")';
             flower29.src = "https://api.maho.cc/asuhe-rand/index.php";
-            tnt.style.backgroundImage = 'url("https://api.maho.cc/random-img/mobile.php")';
+            tnt.style.backgroundImage = 'url("https://api.boxmoe.com/random.php?return=json")';
             flower30.src = "https://api.maho.cc/random-img/mobile.php";
-            monav.style.backgroundImage = 'url("https://api.boxmoe.com/random.php?return=json")';
+            monav.style.backgroundImage = 'url("https://api.maho.cc/random-img/mobile.php")';
             body.style.backgroundImage = 'url("https://img.paulzzh.com/touhou/random")';
             flower26.src = "https://api.boxmoe.com/random.php?size=mw1024";
             flower27.src = "https://api.boxmoe.com/random.php?size=large";
@@ -1464,6 +1568,42 @@
 
         isFirst = !isFirst;
     });
+
+    let isOpen = true;
+
+    function togglePopup() {
+        const topContainer = document.querySelector('.top-container');
+        const closeButton = document.querySelector('.close-btn');
+        if (isOpen) {
+            topContainer.style.transform = 'translateY(-100%)';
+            topContainer.style.opacity = '0';
+            closeButton.style.transform = 'translateY(-66%)';
+        } else {
+            topContainer.style.transform = 'translateY(0)';
+            topContainer.style.opacity = '1';
+            closeButton.style.transform = 'translateY(0)';
+        }
+        closeButton.style.opacity = '1';
+        isOpen = !isOpen;
+    }
+
+    window.onload = () => {
+        document.querySelector('.top-container').style.transform = 'translateY(0)';
+        document.querySelector('.top-container').style.opacity = '1';
+        document.querySelector('.close-btn').style.transform = 'translateY(0)';
+        document.querySelector('.close-btn').style.opacity = '1';
+    };
+
+    const option1 = document.getElementById("option-1");
+    const submenu2 = document.getElementById("submenu-2");
+    const menuContainer = document.querySelector(".menu-container");
+
+    option1.addEventListener("mouseover", () => submenu2.style.display = "block");
+    menuContainer.addEventListener("mouseleave", () => submenu2.style.display = "none");
+    option1.addEventListener("mouseout", (e) => { if (!submenu2.contains(e.relatedTarget)) submenu2.style.display = "none"; });
+    submenu2.addEventListener("mouseover", () => submenu2.style.display = "block");
+    submenu2.addEventListener("mouseout", (e) => { if (!submenu2.contains(e.relatedTarget)) submenu2.style.display = "none"; });
+    option1.addEventListener("click", (e) => { e.preventDefault(); submenu2.style.display = submenu2.style.display === "block" ? "none" : "block"; });
 </script>
 
 </html>
