@@ -586,7 +586,8 @@ span.no {
     background: rgba(255, 255, 255, 0.95);
 }
 
-.banner_wave_1,.banner_wave1 {
+.banner_wave_1,
+.banner_wave1 {
     width: -webkit-fill-available;
     height: 65px;
     _filter: alpha(opacity=80);
@@ -611,8 +612,9 @@ span.no {
 .banner_wave1 {
     background: url(../image/index/wave_1.png) repeat-x;
 }
- 
-.banner_wave_2,.banner_wave2 {
+
+.banner_wave_2,
+.banner_wave2 {
     width: -webkit-fill-available;
     height: 80px;
     _filter: alpha(opacity=80);
@@ -981,7 +983,8 @@ xhx:active {
     transform: scale(1.1);
 }
 
-.miaowu:hover .miaowu__circle-1,.miaowu:hover .miaowu__circle-3 {
+.miaowu:hover .miaowu__circle-1,
+.miaowu:hover .miaowu__circle-3 {
     transform: translateY(22px) scale(1.23);
     transition-delay: .1s;
 }
@@ -999,11 +1002,21 @@ xhx:active {
     transform: translateY(12.34px) rotate(-1deg) scale(1.314);
 }
 
-.miaowu:hover .miaowu__swimsuit5,.miaowu:hover .miaowu__circle-4,.miaowu:hover .miaowu__circle-5,.miaowu:hover .miaowu__circle-6,.miaowu:hover .miaowu__circle-7,.miaowu:hover .miaowu__circle-8 {
+.miaowu:hover .miaowu__swimsuit5,
+.miaowu:hover .miaowu__circle-4,
+.miaowu:hover .miaowu__circle-5,
+.miaowu:hover .miaowu__circle-6,
+.miaowu:hover .miaowu__circle-7,
+.miaowu:hover .miaowu__circle-8 {
     transform: translateY(12.34px) rotate(-1deg) scale(1.314);
 }
 
-.miaowu:hover .miaowu__swimsuit6,.miaowu:hover .miaowu__swimsuit0,.miaowu:hover .miaowu__star-4,.miaowu:hover .miaowu__star-5,.miaowu:hover .miaowu__star-6,.miaowu:hover .miaowu__star-7 {
+.miaowu:hover .miaowu__swimsuit6,
+.miaowu:hover .miaowu__swimsuit0,
+.miaowu:hover .miaowu__star-4,
+.miaowu:hover .miaowu__star-5,
+.miaowu:hover .miaowu__star-6,
+.miaowu:hover .miaowu__star-7 {
     transform: translateY(12.34px) rotate(-1deg) scale(1.314);
 }
 
@@ -1011,7 +1024,8 @@ xhx:active {
     transform: rotate(-12deg) scale(1.1);
 }
 
-.miaowu:hover .miaowu__Sakura,.miaowu:hover .miaowu__Sakura2 {
+.miaowu:hover .miaowu__Sakura,
+.miaowu:hover .miaowu__Sakura2 {
     transform: rotate(-12deg) scale(1.1);
 }
 

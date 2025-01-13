@@ -821,6 +821,12 @@
         transition: transform 1s, opacity 1s;
     }
 
+    @media screen and (max-width: 666px) {
+        .close-btn {
+            left: 32vh;
+        }
+    }
+
     .submenu,
     .submenu-2 {
         display: none;
@@ -1587,12 +1593,10 @@
         isOpen = !isOpen;
     }
 
-    window.onload = () => {
-        document.querySelector('.top-container').style.transform = 'translateY(0)';
-        document.querySelector('.top-container').style.opacity = '1';
-        document.querySelector('.close-btn').style.transform = 'translateY(0)';
-        document.querySelector('.close-btn').style.opacity = '1';
-    };
+    document.querySelector('.top-container').style.transform = 'translateY(0)';
+    document.querySelector('.top-container').style.opacity = '1';
+    document.querySelector('.close-btn').style.transform = 'translateY(0)';
+    document.querySelector('.close-btn').style.opacity = '1';
 
     const option1 = document.getElementById("option-1");
     const submenu2 = document.getElementById("submenu-2");
