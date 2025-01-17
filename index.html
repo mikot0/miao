@@ -84,14 +84,14 @@
             <img id="open-skinMenu" src="./image/index/keai.png">
             <div class="skin-menu">
                 <div class="menu-list">
-                    <a><img id="flower2" src="./image/index/013.png" style="width: 38px;"></a>
-                    <a><img id="flower17" src="./image/index/015.png" style="width: 38px;"></a>
+                    <a><img id="flower2" src="./image/index/013.gif" style="width: 38px;"></a>
+                    <a><img id="flower17" src="./image/index/015.gif" style="width: 38px;"></a>
                     <a><img id="flower18" src="./image/index/017.png" style="width: 38px;"></a>
-                    <a><img id="flower19" src="./image/index/019.png" style="width: 38px;"></a>
-                    <a><img id="flower20" src="./image/index/021.png" style="width: 38px;"></a>
+                    <a><img id="flower19" src="./image/index/019.gif" style="width: 38px;"></a>
+                    <a><img id="flower20" src="./image/index/021.gif" style="width: 38px;"></a>
                     <a><img id="flower21" src="./image/index/023.png" style="width: 38px;"></a>
-                    <a><img id="flower22" src="./image/index/025.png" style="width: 38px;"></a>
-                    <a><img id="flower23" src="./image/index/027.png" style="width: 38px;"></a>
+                    <a><img id="flower22" src="./image/index/025.gif" style="width: 38px;"></a>
+                    <a><img id="flower23" src="./image/index/027.gif" style="width: 38px;"></a>
                     <b></b>
                     <b></b>
                 </div>
@@ -199,8 +199,9 @@
                 style="position: absolute;z-index: 999;pointer-events: none;top: 757px;width: 321px;right: -66px;"
                 class="mobile align-right slide-in">
             <header id="header">
-                <span id="logo2" class="logolink moe-mashiro"><a href="#"><ruby><span class="Sakuraso">Mi</span><span
-                                class="no">a</span><span class="">o</span>
+                <span id="logo2" class="logolink moe-mashiro"><img id="flower202" src="./image/index/0.png"
+                        style="width: 11%; margin: 10px;" hidden><a id="flower201" href="#"><ruby><span
+                                class="Sakuraso">Mi</span><span class="no">a</span><span class="">o</span>
                             <rt class="">呜喵~</rt>
                         </ruby></a></span>
                 <!-- <h1 id="logo"><a href="#">喵喵喵</a></h1> -->
@@ -807,6 +808,12 @@
         opacity: 0.8;
     }
 
+    @media screen and (max-width: 666px) {
+        .close-btn {
+            left: 21vh;
+        }
+    }
+
     .close-btn {
         position: fixed;
         left: 39vh;
@@ -819,12 +826,6 @@
         transform: translateY(-100%);
         opacity: 0;
         transition: transform 1s, opacity 1s;
-    }
-
-    @media screen and (max-width: 666px) {
-        .close-btn {
-            left: 32vh;
-        }
     }
 
     .submenu,
@@ -1344,23 +1345,23 @@
     });
 
     document.addEventListener('DOMContentLoaded', function () {
-        // 获取所有菜单项元素
         var menuItems = document.querySelectorAll('.menu-list a, .menu-list b');
 
-        // 遍历每个菜单项
         menuItems.forEach(function (item) {
-            // 添加鼠标悬停事件
-            item.addEventListener('mouseover', function () {
-                item.style.animation = 'none'; // 移除当前动画效果
-                item.offsetHeight; // 强制重绘，使动画能够重新触发
-                item.style.animation = 'bounce 2s 1'; // 重新应用动画
-            });
+            function triggerAnimation() {
+                if (!item.classList.contains('animating')) {
+                    item.classList.add('animating');
+                    item.style.animation = 'none';
+                    item.offsetHeight;
+                    item.style.animation = 'bounce 2s 1';
+                }
+            }
 
-            // 添加点击事件
-            item.addEventListener('click', function () {
-                item.style.animation = 'none'; // 移除当前动画效果
-                item.offsetHeight; // 强制重绘，使动画能够重新触发
-                item.style.animation = 'bounce 2s 1'; // 重新应用动画
+            item.addEventListener('mouseover', triggerAnimation);
+            item.addEventListener('click', triggerAnimation);
+
+            item.addEventListener('animationend', function () {
+                item.classList.remove('animating');
             });
         });
     });
@@ -1453,21 +1454,21 @@
     });
 
     flower2.addEventListener("click", function () {
-        if (flower2.src.endsWith("013.png")) {
-            flower2.src = "./image/index/014.png";
+        if (flower2.src.endsWith("013.gif")) {
+            flower2.src = "./image/index/014.gif";
             flower2b.style.display = "none";
         } else {
-            flower2.src = "./image/index/013.png";
+            flower2.src = "./image/index/013.gif";
             flower2b.style.display = "block";
         }
     });
 
     flower17.addEventListener("click", function () {
-        if (flower17.src.endsWith("015.png")) {
-            flower17.src = "./image/index/016.png";
+        if (flower17.src.endsWith("015.gif")) {
+            flower17.src = "./image/index/016.gif";
             flower2a.hidden = false;
         } else {
-            flower17.src = "./image/index/015.png";
+            flower17.src = "./image/index/015.gif";
             flower2a.hidden = true;
         }
     });
@@ -1487,15 +1488,15 @@
     });
 
     flower19.addEventListener("click", function () {
-        if (flower19.src.endsWith("019.png")) {
-            flower19.src = "./image/index/020.png";
+        if (flower19.src.endsWith("019.gif")) {
+            flower19.src = "./image/index/020.gif";
             flower2c.classList.add('banner_wave1'); // 添加类
             flower2c.classList.remove('banner_wave_1'); // 移除原来的类
             flower2c.style.left = '0';
             flower2d.classList.add('banner_wave2'); // 添加类
             flower2d.classList.remove('banner_wave_2'); // 移除原来的类
         } else {
-            flower19.src = "./image/index/019.png";
+            flower19.src = "./image/index/019.gif";
             flower2c.classList.add('banner_wave_1'); // 添加原来的类
             flower2c.classList.remove('banner_wave1'); // 移除新类
             flower2c.style.left = '123px';
@@ -1505,10 +1506,14 @@
     });
 
     flower20.addEventListener("click", function () {
-        if (flower20.src.endsWith("021.png")) {
-            flower20.src = "./image/index/022.png";
+        if (flower20.src.endsWith("021.gif")) {
+            flower20.src = "./image/index/022.gif";
+            flower201.hidden = true;
+            flower202.hidden = false;
         } else {
-            flower20.src = "./image/index/021.png";
+            flower20.src = "./image/index/021.gif";
+            flower201.hidden = false;
+            flower202.hidden = true;
         }
     });
 
@@ -1521,18 +1526,18 @@
     });
 
     flower22.addEventListener("click", function () {
-        if (flower22.src.endsWith("025.png")) {
-            flower22.src = "./image/index/026.png";
+        if (flower22.src.endsWith("025.gif")) {
+            flower22.src = "./image/index/026.gif";
         } else {
-            flower22.src = "./image/index/025.png";
+            flower22.src = "./image/index/025.gif";
         }
     });
 
     flower23.addEventListener("click", function () {
-        if (flower23.src.endsWith("027.png")) {
-            flower23.src = "./image/index/028.png";
+        if (flower23.src.endsWith("027.gif")) {
+            flower23.src = "./image/index/028.gif";
         } else {
-            flower23.src = "./image/index/027.png";
+            flower23.src = "./image/index/027.gif";
         }
     });
 

@@ -1,1 +1,1 @@
-<img src="https://github.com/mikot0/miao/blob/main/1.png?raw=true">
+<img src="https://github.com/mikot0/miao/blob/main/miao.png?raw=true">

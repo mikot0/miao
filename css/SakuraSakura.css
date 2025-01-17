@@ -3538,6 +3538,7 @@ body.is-touch #banner {
     /* 动画效果 */
     transition-duration: .3s, .3s;
     /* 动画过渡效果 */
+    z-index: 1111;
 }
 
 /* 当皮肤菜单显示时的样式 */
@@ -3657,7 +3658,7 @@ body.is-touch #banner {
 /* CSS styles for the image-based skin menu button */
 #open-skinMenu {
     width: 85px;
-    z-index: 999;
+    z-index: 1111;
     position: fixed;
     bottom: 0;
     right: 69px;
