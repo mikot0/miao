@@ -1717,6 +1717,7 @@ video::-webkit-media-controls {
 
     .navigation-tags ul li a:hover {
         color: #F9D938 !important;
+        border-bottom: 1px dotted;
     }
 
     #main-container {
