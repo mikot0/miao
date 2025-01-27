@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -217,11 +214,15 @@
                                     <div class="submenu">
                                         <ull>
                                             <lii>
-                                                <a class="submenu-item submenu-trigger" id="option-1">喵喵喵</a>
+                                                <a class="submenu-item submenu-trigger" id="option-1">下载源码</a>
                                                 <div class="submenu-2" id="submenu-2">
                                                     <ull>
-                                                        <lii><a href="#">喵喵喵</a></lii>
-                                                        <lii><a href="#">喵喵喵</a></lii>
+                                                        <lii><a href="miao.zip" download="miao.zip">本地下载</a>
+                                                        </lii>
+                                                        <lii><a
+                                                                href="https://web.archive.org/web//https://misakamiko.to/miao.zip">备用链接</a>
+                                                        </lii>
+                                                        <lii><a href="help.html">周边文档</a></lii>
                                                     </ull>
                                                 </div>
                                                 <a href="#" class="submenu-item">喵喵喵</a>
@@ -811,6 +812,10 @@
     @media screen and (max-width: 666px) {
         .top-container {
             left: 32vh;
+        }
+
+        .close-btn {
+            left: 32vh !important;
         }
     }
 
@@ -1614,5 +1619,3 @@
     submenu2.addEventListener("mouseout", (e) => { if (!submenu2.contains(e.relatedTarget)) submenu2.style.display = "none"; });
     option1.addEventListener("click", (e) => { e.preventDefault(); submenu2.style.display = submenu2.style.display === "block" ? "none" : "block"; });
 </script>
-
-</html>

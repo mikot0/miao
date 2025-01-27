@@ -1210,14 +1210,21 @@ video::-webkit-media-controls {
     .site-header.top {
         background: rgba(255, 255, 255, .7);
         /* 自定义背景颜色 */
-        border-bottom: 1.5px solid #FFFFFF;
+        border-bottom: 1.5px solid #fff;
         /* 自定义边框颜色 */
+        box-shadow:
+            0 2px 4px 0 rgba(182, 227, 255, 0.47),
+            0 2px 4px 0 rgba(255, 255, 255, 0.4);
     }
 
     /* 鼠标悬停时导航栏的样式 */
     .site-header:hover {
-        background-color: rgba(255, 255, 255, .9);
+        background-color: rgba(255, 255, 255, .7);
         /* 自定义鼠标悬停背景颜色 */
+        border-bottom: 1.5px solid #fff;
+        box-shadow:
+            0 2px 4px 0 rgba(182, 227, 255, 0.47),
+            0 2px 4px 0 rgba(255, 255, 255, 0.4);
     }
 
     .openNav {
