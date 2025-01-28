@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -76,7 +75,7 @@
             <a class="cd-top"></a>
             <div class="top-container">
                 <div class="popup-container">
-                    <img src="./image/index/scroll1.png" class="popup-img">
+                    <img id="flowersb" src="./image/index/scroll1.png" class="popup-img">
                 </div>
             </div>
             <button class="close-btn" onclick="togglePopup()"></button>
@@ -223,7 +222,7 @@
                                                         <lii><a href="miao.zip" download="miao.zip">本地下载</a>
                                                         </lii>
                                                         <lii><a
-                                                                href="https://web.archive.org/web/20250127093213/https://misakamiko.to/miao.zip">备用链接</a>
+                                                                href="https://web.archive.org/web/20250128005658/http://misakamiko.to/miao.zip">备用链接</a>
                                                         </lii>
                                                         <lii><a href="help.html">周边文档</a></lii>
                                                     </ull>
@@ -1295,6 +1294,7 @@
             ascii.style.display = "none"; //隐藏手机端导航栏展示图
             misakamikoto.style.display = "none"; // 隐藏misakamikoto.png
             flower.hidden = true;
+            flowersb.hidden = true;
         } else { // 如果视频当前正在播放
             video.pause(); // 暂停视频
             toggleButton.innerHTML = '<img src="./image/index/bilibili2.png" style="max-width: 39px;">'; // 更改按钮图标以显示播放符号
@@ -1307,6 +1307,7 @@
             ascii.style.display = "block"; //显示手机端导航栏展示图
             misakamikoto.style.display = "block"; // 显示misakamikoto.png
             flower.hidden = false;
+            flowersb.hidden = false;
         }
         event.stopPropagation(); // 阻止事件继续传播
     });
