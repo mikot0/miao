@@ -832,10 +832,11 @@ xhx:active {
 }
 
 .miaowu__circle-7 {
-    width: 38px;
+    width: 138px;
     top: -66px;
     left: 166px;
     transform: scale(.1);
+    z-index: -1;
 }
 
 .miaowu__circle-8 {
@@ -888,6 +889,13 @@ xhx:active {
 }
 
 .miaowu__star-3 {
+    width: 66px;
+    left: 230px;
+    bottom: 52px;
+    transform: rotate(-48deg) scale(.1);
+}
+
+.miaowu__star-38 {
     width: 66px;
     left: 230px;
     bottom: -6px;
@@ -1020,7 +1028,8 @@ xhx:active {
     transform: translateY(12.34px) rotate(-1deg) scale(1.314);
 }
 
-.miaowu:hover .miaowu__star-3 {
+.miaowu:hover .miaowu__star-3,
+.miaowu:hover .miaowu__star-38 {
     transform: rotate(-12deg) scale(1.1);
 }
 
