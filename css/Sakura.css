@@ -825,7 +825,7 @@ xhx:active {
 }
 
 .miaowu__circle-6 {
-    width: 52px;
+    width: 100px;
     top: -66px;
     left: 66px;
     transform: scale(.1);
@@ -840,8 +840,8 @@ xhx:active {
 }
 
 .miaowu__circle-8 {
-    width: 38px;
-    top: -55px;
+    width: 66px;
+    top: -60px;
     left: 55px;
     transform: scale(.1);
 }
