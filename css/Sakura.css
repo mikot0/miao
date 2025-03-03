@@ -13,7 +13,6 @@ a {
     cursor: url(../curso/miku1.cur), auto;
 }
 
-a:active,
 a:hover {
     cursor: url(../curso/text.cur), alias;
 }
