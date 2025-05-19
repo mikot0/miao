@@ -2464,7 +2464,7 @@ dl {
 }
 
 table {
-    margin: 0 0 2em 0;
+    margin: 0 -10em 2em 0;
     width: 100%;
 }
 
@@ -3863,7 +3863,7 @@ body.is-touch #banner {
 
 /* 网站描述 */
 .describe {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
