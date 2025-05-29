@@ -354,7 +354,7 @@
 
 		// 设置 Typed.js 的配置选项
 		var options = {
-			strings: ["你指尖跃动的电光，是我此生不变的信仰，唯我超电磁炮永世长存！"/*, ""*/],
+			strings: ["你指尖的硬币，决定我心跳的频率。"/*, ""*/],
 			typeSpeed: 140,
 			backSpeed: 50,
 			loop: true,
