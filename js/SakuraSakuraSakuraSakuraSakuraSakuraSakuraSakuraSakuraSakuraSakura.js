@@ -19,7 +19,7 @@
 
   function handleVisibilityChange() {
     if (document.hidden) {
-      document.title = "(つェ⊂)欧～内～撒～麻，网站404崩溃了";
+      document.title = "(つェ⊂)欧～内～撒～嘛，网站404崩溃了";
       pauseAudio(); // 当用户离开页面时暂停音频
     } else {
       document.title = '姐姐大人~太激烈啦~ ' + originalTitle;
